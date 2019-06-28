@@ -1,0 +1,17 @@
+﻿@using Entity
+<h2>Yeni Rakip Analizi</h2>
+
+<form method="post">
+    <div class="form-group">
+        <select name="UrunId">
+            @foreach (Urun item in ViewBag.Urunler)
+            {
+                <option value="@item.Id">@item.UrunAdi</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <input name="SatisAdedi" type="number" class="form-control" />
+    </div>
+</form>
+

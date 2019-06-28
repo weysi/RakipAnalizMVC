@@ -1,0 +1,26 @@
+﻿@using Entity
+@model List<Marka>
+
+<h2>Markalar</h2>
+<a href="/Marka/Yeni">Yeni Marka Ekle</a>
+
+<style>
+    th, td { padding:20px; border:1px solid black;}
+</style>
+
+<table>
+    <tr>
+        <th>Marka Adı</th> <th>İşlemler</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.MarkaAdi</td>
+            <td>
+       <a href="?sil=@item.Id">Sil</a>
+       <a href="/Marka/Duzenle/@item.Id">Düzenle</a>
+            </td>
+        </tr>
+    }
+</table>
+

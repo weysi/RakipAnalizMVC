@@ -1,0 +1,31 @@
+﻿@using Entity
+@model List<UrunGrubu>
+
+<h2>Ürün Grupları</h2>
+
+<a href="/UrunGrup/Yeni" class="btn btn-success">Yeni Grup Ekle</a>
+
+<style>
+    th, td {padding:20px; border:1px solid black;}
+</style>
+
+<table>
+    <tr>
+        <th>Grup Adı</th>
+        <th>Üst Grup</th>
+        <th>İşlemler</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.GrupAdi</td>
+            <td>@Html.Raw(item.UstUrunGrubu == null ? "Yok" : item.UstUrunGrubu.GrupAdi)</td>
+            <td>
+              <a href="/UrunGrup/Index?sil=@item.Id">Sil</a>
+                <!-- {controller}/{action}/{id} -->
+            <a href="/UrunGrup/Duzenle/@item.Id">Düzenle</a>
+            </td>
+        </tr>
+    }
+</table>
+

@@ -1,0 +1,29 @@
+﻿@using Entity
+@model List<RakipAnaliz>
+<style>
+    .kutu {margin:10px; border:1px solid black;}
+</style>
+
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+        <div class="col-md-3">
+            <div class="kutu">
+                <h3>@item.Ay</h3>
+                <table>
+                    @foreach (var k in item.Kayitlar)
+                    {
+                    <tr>
+                        <td>@k.Urun.Marka.MarkaAdi</td>
+                        <td>@k.Urun.UrunAdi</td>
+                        <td>@k.SatisAdedi</td>
+                    </tr>
+                    }
+                </table>
+            </div>
+        </div>
+        }
+    </div>
+</div>

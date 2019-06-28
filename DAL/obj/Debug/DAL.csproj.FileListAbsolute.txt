@@ -1,0 +1,28 @@
+C:\Users\Section1\source\repos\DAL\bin\Debug\DAL.dll.config
+C:\Users\Section1\source\repos\DAL\bin\Debug\DAL.dll
+C:\Users\Section1\source\repos\DAL\bin\Debug\DAL.pdb
+C:\Users\Section1\source\repos\DAL\bin\Debug\Entity.dll
+C:\Users\Section1\source\repos\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Section1\source\repos\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Section1\source\repos\DAL\bin\Debug\Entity.pdb
+C:\Users\Section1\source\repos\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Section1\source\repos\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Section1\source\repos\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Section1\source\repos\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Section1\source\repos\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Section1\source\repos\DAL\obj\Debug\DAL.dll
+C:\Users\Section1\source\repos\DAL\obj\Debug\DAL.pdb
+C:\Users\MSI\Desktop\Yeni klasör\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\MSI\Desktop\Yeni klasör\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Desktop\Yeni klasör\DAL\obj\Debug\DAL.dll
+C:\Users\MSI\Desktop\Yeni klasör\DAL\obj\Debug\DAL.pdb
+C:\Users\MSI\Desktop\Yeni klasör\DAL\bin\Debug\DAL.dll.config
+C:\Users\MSI\Desktop\Yeni klasör\DAL\bin\Debug\DAL.dll
+C:\Users\MSI\Desktop\Yeni klasör\DAL\bin\Debug\DAL.pdb
+C:\Users\MSI\Desktop\Yeni klasör\DAL\bin\Debug\Entity.dll
+C:\Users\MSI\Desktop\Yeni klasör\DAL\bin\Debug\EntityFramework.dll
+C:\Users\MSI\Desktop\Yeni klasör\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MSI\Desktop\Yeni klasör\DAL\bin\Debug\Entity.pdb
+C:\Users\MSI\Desktop\Yeni klasör\DAL\bin\Debug\EntityFramework.xml
+C:\Users\MSI\Desktop\Yeni klasör\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MSI\Desktop\Yeni klasör\DAL\obj\Debug\DAL.csproj.CopyComplete

@@ -1,0 +1,22 @@
+﻿@using Entity
+@model UrunGrubu
+
+<h2>Ürün Grupları - Düzenle</h2>
+
+<form method="post">
+    <div class="form-group">
+        <input name="GrupAdi" class="form-control" value="@Model.GrupAdi" />
+    </div>
+    <div class="form-group">
+        <select name="UstGrupId">
+            <option value="">Yok</option>
+            @foreach (UrunGrubu item in ViewBag.Gruplar)
+            {
+                bool seciliMi = item.Id == Model.UstGrupId;
+                string attr = seciliMi ? "selected" : "";
+                <option value="@item.Id" @attr>@item.GrupAdi</option>
+            }
+        </select>
+    </div>
+    <button>Kaydet</button>
+</form>

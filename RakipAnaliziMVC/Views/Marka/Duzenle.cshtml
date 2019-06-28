@@ -1,0 +1,11 @@
+﻿@using Entity
+@model Marka
+<h2>Marka Duzenle</h2>
+
+<form method="post">
+    <input type="hidden" name="MarkaID" value="@Model.Id" />
+
+    <input name="MarkaAdi" class="form-control" value="@Model.MarkaAdi" />
+
+    <button>Kaydet</button>
+</form>

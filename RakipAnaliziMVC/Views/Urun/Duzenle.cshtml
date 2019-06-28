@@ -1,0 +1,53 @@
+﻿@using Entity
+@model Urun
+
+<h2>Yeni Ürün</h2>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        @Html.ValidationSummary()
+    </div>
+}
+
+<form method="post">
+    <div class="form-group">
+        <label>Ürün Adı: </label>
+        <input name="UrunAdi" required class="form-control" value="@Model.UrunAdi" />
+    </div>
+    <div class="form-group">
+        <label>SN: </label>
+        <input name="SN" class="form-control" value="@Model.SN" />
+    </div>
+    <div class="form-group">
+        <label>Model Kodu: </label>
+        <input name="ModelKodu" class="form-control" value="@Model.ModelKodu" />
+    </div>
+    <div class="form-group">
+        <label>Marka: </label>
+        <select name="MarkaId" required>
+            <option value="">Seçiniz</option>
+            @foreach (Marka item in ViewBag.Markalar)
+            {
+                var seciliMi = item.Id == Model.Marka.Id;
+                var s = seciliMi ? "selected" : "";
+
+                <option value="@item.Id" @s>@item.MarkaAdi</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Ürün Grupları: </label>
+        @foreach (UrunGrubu item in ViewBag.UrunGruplar)
+        {
+         var seciliMi = Model.UrunGruplari
+                .Any(x => x.Id == item.Id);
+            var s = seciliMi ? "checked" : "";
+
+            <input id="@Html.Raw("C"+item.Id)" type="checkbox" name="gruplar" value="@item.Id" @s/>
+            <label for="@Html.Raw("C"+item.Id)">@item.GrupAdi</label>
+        }
+    </div>
+    <button>Kaydet</button>
+</form>
+
